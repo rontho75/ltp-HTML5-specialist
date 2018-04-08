@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab #6</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="../HTML5%20Specialist/jquery.mobile-1.4.5/jquery-1.4.5.min.js"></script>
+        <script src="../HTML5%20Specialist/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    <body>
+        <form action="#" method="post">
+            <legend>INTRODUCTION</legend><br/>
+        PATIENT NAME: <input type="text" maxlength="20" />
+        Birth Date: <input type="text" id="dob" /><br/>
+            <br/>
+            <p>Although dental personnel primarily treat the area in and around your mouth, your mouth is a part of your entire body.  Health problems that you may have, or medication that you may be taking, could have an important interrelationship with the dentistry you will receive.  Thank you for answering the following questions.</p>
+            <hr><br/>
+            Are you under a physician's care now?<br/>
+            <input type="radio" name="care" id="yes"/> Yes
+            <input type="radio" name="care" id="no"/> No<br/><br/>
+            <label for="explain"/>   If yes, please explain:
+            <input type="text" />
+            <br/>
+            Have you ever been hospitalized or had a major operation?<br/>
+            <input type="radio" name="operation" id="yes"/> Yes
+            <input type="radio" name="operation" id="no"/> No<br/><br/>
+            <label for="explain"/>   If yes, please explain:
+            <input type="text" />
+            <br/>
+            Have you ever had a serious head or nect injury?<br/>
+            <input type="radio" name="head" id="yes"/> Yes
+            <input type="radio" name="head" id="no"/> No<br/><br/>
+            <label for="explain"/>   If yes, please explain:
+            <input type="text" />
+            <br/>
+            Are you taking any medications, pill or drugs?<br/>
+            <input type="radio" name="med" id="yes"/> Yes
+            <input type="radio" name="med" id="no"/> No<br/><br/>
+            <label for="explain"/>   If yes, please explain:
+            <input type="text" />
+            <br/>
+            Do you take, or have you taken, Phen-Fen or Redux?<br/>
+            <input type="radio" name="redux" id="yes"/> Yes
+            <input type="radio" name="redux" id="no"/> No<br/><br/>
+            <input type="text" />
+            <br/>
+            Have you ever taken Fosamax, Boniva, Actonel or any other medications containing bisphosphonates?<br/>
+            <input type="radio" name="fosamax" id="yes"/> Yes
+            <input type="radio" name="fosamax" id="no"/> No<br/><br/>
+            <input type="text" />
+            <br/>
+            Are you on a special diet?<br/>
+            <input type="radio" name="diet" id="yes"/> Yes
+            <input type="radio" name="diet" id="no"/> No<br/><br/>
+            <br/>
+            Do you use tobacco?<br/>
+            <input type="radio" name="tobacco" id="yes"/> Yes
+            <input type="radio" name="tobacco" id="no"/> No<br/><br/>
+            <br/>
+            Do you use controlled substances?<br/>
+            <input type="radio" name="substances" id="yes"/> Yes
+            <input type="radio" name="substances" id="no"/> No<br/><br/> 
+            <fieldset>
+                <legend>Women: Are you</legend>
+                Pregnant/Trying to get pregnant?<br/>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/><br/>
+               Taking oral contraceptives?<br/>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/><br/>
+                Nursing?<br/>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/><br/>
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend>Are you allergic to any of the following?</legend>
+                <input type="checkbox" id="medication" name="aspirin">Aspirin<br/>
+                <input type="checkbox" id="medication" name="Penicillin">Penicillin<br/>
+                <input type="checkbox" id="medication" name="Codeine">Codeine<br/>
+                <input type="checkbox" id="medication" name="anathetics">Local Anesthetics<br/>
+                <input type="checkbox" id="medication" name="acryllic">Acryllic<br/>
+                <input type="checkbox" id="medication" name="metal">Metal<br/>
+                <input type="checkbox" id="medication" name="latex">Latex<br/>
+                <input type="checkbox" id="medication" name="sulfa">Sulfa drugs&nbsp;&nbsp;<br/>
+                <br/>
+                <input type="checkbox" id="aspirin" name="aspirin">Other<br/>
+                <label for="explain"/>   If yes, please explain:<br/><br/>
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend>Do you have, or have you had any of the following?</legend>
+                <label for="history">AIDS/HIV Positive</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Alzheimer's Disease</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Anaphlaxis</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Anemia</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Angina</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Arthritis/Gout</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Artificial Heart Valve</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Artificial Joint</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Asthma</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Blood Disease</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Blood Transfusion</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Breathing Problem</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Bruise Easily</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Cancer</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Chemotherapy</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Chest Pains</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Cold Sores/Fever Blisters</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Congenital Heart Disorder</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Convulsions</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Cortisone Medicine</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Diabetes</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Drug Addiction</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Easily Winded</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Emphysema</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Epilepsy or Seizures</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Excessive Bleeding</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Excessive Thirst</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Fainting Spells/Dizziness</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Frequent Cough</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Frequent Diarrhea</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Frequent Headaches</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Genital Herpes</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Glaucoma</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Hay Fever</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Heart Attack/Failure</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Heart Murmer</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Heart Pacemaker</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Heart Trouble/Disease</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Hemophilia</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Hepatitis A</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Hepatitus B or C</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Herpes</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">High Blood Pressure</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">High Cholesterol</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Hives or Rash</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Hypoglycemia</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Irregular Hearbeat</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Kidney Problems</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Leukemia</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Liver Disease</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Low Blood Pressure</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Lung Disease</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Mitral Valve Prolapse</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Osteperosis</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Pain in Joints</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Parathyroid Disease</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Psychiatric Care</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Radiation Treatments</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Recent Weight loss</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Renal Dialysis</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Rhgeumatic Fever</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Rheumatism</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Scarlet Fever</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Shingles</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Sickle Cell Disease</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Sinus Trouble</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Spina Bifida</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Stomach/Intestinal Disease</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Stroke</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Swelling of the Limbs</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Thyroid Disease</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Tonsilitis</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Tuberculosis</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Tumors or Growths</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Ulcers</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Venereal Disease</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="history">Yellow Jaundice</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <br/>
+                <label for="other">Have you ever had any serious illness not listed above?</label>
+                <input type="radio" id="yes"/> Yes
+                <input type="radio" id="no"/> No<br/>
+                <input type="text" /><br/>
+                <br/>
+                <label for="comments">Comments: </label><br/>
+                <textarea rows="10" cols="100" name="comments"></textarea><br/>
+                <hr>
+                <p>To the best of my knowledge, the questions on this form have been accurately answered. I understand that providing incorrect information can be dangerous to my (or patient's) health. It is my responsibility to inform the dental office of any changes in medical status.</p><br/>
+                <hr>
+                <label>SIGNATURE OF PATIENT, PARENT, OR GUARDIAN</label>
+                <input type="text" />
+                <label>DATE</label>
+                <input type="text" /><br/>
+                <hr>
+            </fieldset>
+        </form>
+    </body>
+</html>
